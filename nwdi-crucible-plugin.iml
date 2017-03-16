@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<module version="4" relativePaths="false" type="JAVA_MODULE"> 
+  <component name="NewModuleRootManager"> 
+    <exclude-output/>  
+    <orderEntry type="inheritedJdk"/>  
+    <!-- output url="file://$$MODULE_DIR$$/${maven.build.dest}"/ -->  
+    <!-- output-test url="file://$$MODULE_DIR$$/${maven.test.dest}"/ -->  
+    <content url="file://$MODULE_DIR$"> 
+      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.sourceDirectory}" isTestSource="false"/ -->  
+      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.testSourceDirectory}" isTestSource="true"/ -->  
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true"/>
+      <excludeFolder url="file://$MODULE_DIR$/target"/>
+    </content>  
+    <orderEntry type="sourceFolder" forTests="false"/>  
+    <!-- Next include each dependency:
+      <orderEntry type="module" module-name="${dep.artifactId}"/>
+      <orderEntry type="module-library">
+        <library name="${dep.artifactId}">
+          <CLASSES>
+            <root url="jar://${lib.path}!/"/>
+          </CLASSES>
+          <JAVADOC/>
+          <SOURCES/>
+        </library>
+      </orderEntry>
+     -->  
+    <output url="file://$MODULE_DIR$/target/classes"/>
+    <output-test url="file://$MODULE_DIR$/target/test-classes"/>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/junit/junit/4.10/junit-4.10.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/junit/junit/4.10/junit-4.10-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/junit/junit/4.10/junit-4.10-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/fisheye/atlassian-fisheye-api/2.3.3-493/atlassian-fisheye-api-2.3.3-493.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/sal/sal-api/2.7.1/sal-api-2.7.1.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/event/atlassian-event/1.0/atlassian-event-1.0.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/event/atlassian-event/1.0/atlassian-event-1.0-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/event/atlassian-event/1.0/atlassian-event-1.0-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/log4j/log4j/1.2.9/log4j-1.2.9.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/log4j/log4j/1.2.9/log4j-1.2.9-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/logkit/logkit/1.0.1/logkit-1.0.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/logkit/logkit/1.0.1/logkit-1.0.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-lang/commons-lang/2.2/commons-lang-2.2.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-lang/commons-lang/2.2/commons-lang-2.2-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/commons-lang/commons-lang/2.2/commons-lang-2.2-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/springframework/spring/2.5.6/spring-2.5.6.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/springframework/spring/2.5.6/spring-2.5.6-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.10/jaxb-impl-2.1.10.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.10/jaxb-impl-2.1.10-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/activation/activation/1.1/activation-1.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-webfragment/2.4.4/atlassian-plugins-webfragment-2.4.4.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-webfragment/2.4.4/atlassian-plugins-webfragment-2.4.4-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-webfragment/2.4.4/atlassian-plugins-webfragment-2.4.4-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-core/2.4.4/atlassian-plugins-core-2.4.4.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-core/2.4.4/atlassian-plugins-core-2.4.4-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-core/2.4.4/atlassian-plugins-core-2.4.4-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/dom4j/dom4j/1.4/dom4j-1.4.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/dom4j/dom4j/1.4/dom4j-1.4-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/rest/atlassian-rest-common/1.1.3/atlassian-rest-common-1.1.3.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/rest/atlassian-rest-common/1.1.3/atlassian-rest-common-1.1.3-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/rest/atlassian-rest-common/1.1.3/atlassian-rest-common-1.1.3-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/rest/com.atlassian.jersey-library/1.1.3/com.atlassian.jersey-library-1.1.3.pom!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-server/1.0.3-atlassian-1/jersey-server-1.0.3-atlassian-1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-server/1.0.3-atlassian-1/jersey-server-1.0.3-atlassian-1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-server/1.0.3-atlassian-1/jersey-server-1.0.3-atlassian-1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-core/1.0.3-atlassian-1/jersey-core-1.0.3-atlassian-1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-core/1.0.3-atlassian-1/jersey-core-1.0.3-atlassian-1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-core/1.0.3-atlassian-1/jersey-core-1.0.3-atlassian-1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/asm/asm/3.1/asm-3.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/asm/asm/3.1/asm-3.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-json/1.0.3-atlassian-1/jersey-json-1.0.3-atlassian-1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-json/1.0.3-atlassian-1/jersey-json-1.0.3-atlassian-1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/sun/jersey/jersey-json/1.0.3-atlassian-1/jersey-json-1.0.3-atlassian-1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jettison/jettison/1.0.1/jettison-1.0.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jettison/jettison/1.0.1/jettison-1.0.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jettison/jettison/1.0.1/jettison-1.0.1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.4.1/jackson-core-asl-1.4.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.4.1/jackson-core-asl-1.4.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.4.1/jackson-jaxrs-1.4.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.4.1/jackson-jaxrs-1.4.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.4.1/jackson-mapper-asl-1.4.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.4.1/jackson-mapper-asl-1.4.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-xc/1.4.1/jackson-xc-1.4.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/codehaus/jackson/jackson-xc/1.4.1/jackson-xc-1.4.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/crucible/atlassian-crucible-scmutils/2.3.3-493/atlassian-crucible-scmutils-2.3.3-493.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/thoughtworks/xstream/xstream/1.3/xstream-1.3.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/thoughtworks/xstream/xstream/1.3/xstream-1.3-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/thoughtworks/xstream/xstream/1.3/xstream-1.3-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/oro/oro/2.0.8/oro-2.0.8-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/security/auth/trustedapps/atlassian-trusted-apps-core/2.1/atlassian-trusted-apps-core-2.1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/security/auth/trustedapps/atlassian-trusted-apps-core/2.1/atlassian-trusted-apps-core-2.1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/security/auth/trustedapps/atlassian-trusted-apps-core/2.1/atlassian-trusted-apps-core-2.1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/opensymphony/oscore/2.2.7/oscore-2.2.7.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/joda-time/joda-time/1.4/joda-time-1.4.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-annotation/1.2.13/atlassian-spring-scanner-annotation-1.2.13.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-annotation/1.2.13/atlassian-spring-scanner-annotation-1.2.13-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-annotation/1.2.13/atlassian-spring-scanner-annotation-1.2.13-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="RUNTIME" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-runtime/1.2.13/atlassian-spring-scanner-runtime-1.2.13.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-runtime/1.2.13/atlassian-spring-scanner-runtime-1.2.13-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugin/atlassian-spring-scanner-runtime/1.2.13/atlassian-spring-scanner-runtime-1.2.13-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="PROVIDED" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-osgi-testrunner/1.2.3/atlassian-plugins-osgi-testrunner-1.2.3.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-osgi-testrunner/1.2.3/atlassian-plugins-osgi-testrunner-1.2.3-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/plugins/atlassian-plugins-osgi-testrunner/1.2.3/atlassian-plugins-osgi-testrunner-1.2.3-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/apache/wink/wink-client/1.1.3-incubating/wink-client-1.1.3-incubating.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/apache/wink/wink-common/1.1.3-incubating/wink-common-1.1.3-incubating.jar!/"/>
+        </CLASSES>
+        <SOURCES/>
+        <JAVADOC/>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/org/apache/geronimo/specs/geronimo-annotation_1.1_spec/1.0/geronimo-annotation_1.1_spec-1.0-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/google/code/gson/gson/2.2.2-atlassian-1/gson-2.2.2-atlassian-1.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/google/code/gson/gson/2.2.2-atlassian-1/gson-2.2.2-atlassian-1-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/google/code/gson/gson/2.2.2-atlassian-1/gson-2.2.2-atlassian-1-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+    <orderEntry scope="TEST" type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/upm/upm-api/2.15/upm-api-2.15.jar!/"/>
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/upm/upm-api/2.15/upm-api-2.15-sources.jar!/"/>
+        </SOURCES>
+        <JAVADOC>
+          <root url="jar://C:/Users/John/.m2/repository/com/atlassian/upm/upm-api/2.15/upm-api-2.15-javadoc.jar!/"/>
+        </JAVADOC>
+      </library>
+    </orderEntry>
+  </component>  
+  <component name="ModuleRootManager"/>  
+  <!-- If it's a war project:
+  <component name="WebModuleProperties">
+    <containerElement type="module" name="${dep.artifactId}">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/classes" />
+    </containerElement>
+    <containerElement type="library" level="module" name="${dep.artifactId}">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/${dep.systemPath.name}" />
+    </containerElement>
+    <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}/WEB-INF/web.xml" version="" />
+    <webroots>
+      <root url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}" relative="/" />
+    </webroots>
+  </component>
+  --> 
+</module>
