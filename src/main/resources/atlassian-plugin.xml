@@ -1,24 +1,17 @@
 <atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
     <plugin-info>
         <description>${project.description}</description>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
         <version>${project.version}</version>
-        <vendor name="${project.organization.name}" url="${project.organization.url}" />
-        <param name="plugin-icon">images/pluginIcon.png</param>
-        <param name="plugin-logo">images/pluginLogo.png</param>
+        <param name="configure.url">/plugins/servlet/nwdi</param>
     </plugin-info>
 
-    <!-- add our i18n resource -->
-    <resource type="i18n" name="i18n" location="nwdi-crucible-plugin"/>
-    
-    <!-- add our web resources -->
-    <web-resource key="nwdi-crucible-plugin-resources" name="nwdi-crucible-plugin Web Resources">
-        <dependency>com.atlassian.auiplugin:ajs</dependency>
-        
-        <resource type="download" name="nwdi-crucible-plugin.css" location="/css/nwdi-crucible-plugin.css"/>
-        <resource type="download" name="nwdi-crucible-plugin.js" location="/js/nwdi-crucible-plugin.js"/>
-        <resource type="download" name="images/" location="/images"/>
+    <scm name="NWDI DTR/SCM" key="scmprovider" class="au.com.redwoodit.crucible.nwdi.NwdiModule">
+        <description>${project.description}</description>
+    </scm>
 
-        <context>nwdi-crucible-plugin</context>
-    </web-resource>
-    
+    <servlet name="NWDI Configuration Servlet" key="configservlet" class="au.com.redwoodit.crucible.nwdi.NwdiConfigServlet" adminLevel="system">
+        <description>Allows Configuration of NWDI Plugin</description>
+        <url-pattern>/nwdi</url-pattern>
+    </servlet>
 </atlassian-plugin>
